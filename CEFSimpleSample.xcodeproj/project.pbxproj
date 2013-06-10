@@ -681,10 +681,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/CEFSimpleSample/CEF/Mac";
 				INFOPLIST_FILE = "CEFSimpleSample/Mac/Resources/CEFSimpleSample-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(SRCROOT)/CEFSimpleSample/CEF/lib",
-					"\"$(SRCROOT)/CEFSimpleSample/CEF/Mac/lib\"",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/CEFSimpleSample/CEF/Mac/lib\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = "";
 				WRAPPER_EXTENSION = app;
@@ -701,10 +698,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/CEFSimpleSample/CEF/Mac";
 				INFOPLIST_FILE = "CEFSimpleSample/Mac/Resources/CEFSimpleSample-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(SRCROOT)/CEFSimpleSample/CEF/lib",
-					"\"$(SRCROOT)/CEFSimpleSample/CEF/Mac/lib\"",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/CEFSimpleSample/CEF/Mac/lib\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = "";
 				WRAPPER_EXTENSION = app;
