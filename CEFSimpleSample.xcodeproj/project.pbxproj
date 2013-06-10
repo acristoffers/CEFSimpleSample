@@ -21,7 +21,6 @@
 		E79DEA32164464600042FE43 /* aliasCursor.png in Resources */ = {isa = PBXBuildFile; fileRef = E79DE9CA164464600042FE43 /* aliasCursor.png */; };
 		E79DEA33164464600042FE43 /* locale.pak in Resources */ = {isa = PBXBuildFile; fileRef = E79DE9CB164464600042FE43 /* locale.pak */; };
 		E79DEA34164464600042FE43 /* calendarPicker.css in Resources */ = {isa = PBXBuildFile; fileRef = E79DE9D1164464600042FE43 /* calendarPicker.css */; };
-		E79DEA35164464600042FE43 /* calendarPicker.js in Sources */ = {isa = PBXBuildFile; fileRef = E79DE9D2164464600042FE43 /* calendarPicker.js */; };
 		E79DEA36164464600042FE43 /* calendarPickerMac.css in Resources */ = {isa = PBXBuildFile; fileRef = E79DE9D3164464600042FE43 /* calendarPickerMac.css */; };
 		E79DEA37164464600042FE43 /* cellCursor.png in Resources */ = {isa = PBXBuildFile; fileRef = E79DE9D4164464600042FE43 /* cellCursor.png */; };
 		E79DEA38164464600042FE43 /* chrome.pak in Resources */ = {isa = PBXBuildFile; fileRef = E79DE9D5164464600042FE43 /* chrome.pak */; };
@@ -525,7 +524,6 @@
 				E78D969D1638B9F300DE580E /* ClientHandler.cpp in Sources */,
 				E78D96A41638BA0B00DE580E /* AppDelegate.mm in Sources */,
 				E78D96A61638BA0B00DE580E /* main.mm in Sources */,
-				E79DEA35164464600042FE43 /* calendarPicker.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
