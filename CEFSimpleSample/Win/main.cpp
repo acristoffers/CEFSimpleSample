@@ -17,14 +17,15 @@ ClientHandler* g_handler = 0;
 
 std::string GetApplicationDir()
 {
-	HMODULE hModule = GetModuleHandleW(NULL);
-	WCHAR wpath[MAX_PATH];
-	GetModuleFileNameW(hModule, wpath, MAX_PATH);
+    HMODULE hModule = GetModuleHandleW(NULL);
+    WCHAR   wpath[MAX_PATH];
 
-	std::wstring wide( wpath );
-	std::string path( wide.begin(), wide.end() );
+    GetModuleFileNameW(hModule, wpath, MAX_PATH);
+    std::wstring wide(wpath);
 
-	return path.substr(0, path.find_last_of("\\/"));
+	std::string path = CefString(wide);
+	path = path.substr( 0, path.find_last_of("\\/") );
+	return path;
 }
 
 LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
@@ -79,7 +80,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 
 HWND RegisterWindow(HINSTANCE hInstance, int nCmdShow)
 {
-	const wchar_t CLASS_NAME[]  = L"TestsDatabaseWindow";
+	const wchar_t CLASS_NAME[]  = L"CEFSimpleSample";
 
 	WNDCLASS wc = { };
 
@@ -92,7 +93,7 @@ HWND RegisterWindow(HINSTANCE hInstance, int nCmdShow)
 	HWND hwnd = CreateWindowEx(
 		0,                              // Optional window styles.
 		CLASS_NAME,                     // Window class
-		L"Manage questions and tests",    // Window text
+		L"CEF Simple Sample",    // Window text
 		WS_OVERLAPPEDWINDOW,            // Window style
 
 		// Size and position
