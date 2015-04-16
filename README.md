@@ -4,9 +4,6 @@ A simple hello world application to get you started with CEF.
 
 It setups a browser, loads a local file and binds JS methods.
 
-This is the binary branch, wich includes CEF dlls and dylibs as well as headers.
-If you only want the CEFSimpleSample code, switch to WithoutBinaries branch.
-
 LICENSE
 -------
 (MIT)
