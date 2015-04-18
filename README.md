@@ -4,6 +4,8 @@ A simple hello world application to get you started with CEF.
 
 It setups a browser, loads a local file and binds JS methods.
 
+For a CEF 3 version, visit https://github.com/acristoffers/CEF3SimpleSample
+
 LICENSE
 -------
 (MIT)
